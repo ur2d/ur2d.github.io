@@ -1,0 +1,892 @@
+<title>UR2D eSports</title>
+<link type="text/css" rel="stylesheet" href="resources/customStyle.css">
+<link rel="icon" type="image/png" href="resources/favicon.png">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script src="resources/jquery-3.6.0.min.js"></script>
+<script src="resources/navbar.js"></script>
+<style type="text/css">
+    .ritz .waffle a {
+        color: inherit;
+    }
+
+    .ritz .waffle .s22 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #000000;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s10 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #999999;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s13 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #b45f06;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s6 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #f1c232;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s25 {
+        background-color: #000000;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s26 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #000000;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s7 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s0 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #9900ff;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 10pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s2 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #0000ff;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 10pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s24 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #93c47d;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s3 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #f1c232;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s5 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #f1c232;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0;
+    }
+
+    .ritz .waffle .s17 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #ffffff;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s4 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #f1c232;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s20 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #93c47d;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0;
+    }
+
+    .ritz .waffle .s8 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #f1c232;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s9 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #999999;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s1 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #0000ff;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s15 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #b45f06;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0;
+    }
+
+    .ritz .waffle .s14 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #b45f06;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s21 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #93c47d;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0;
+    }
+
+    .ritz .waffle .s11 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #999999;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 0;
+    }
+
+    .ritz .waffle .s12 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #999999;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s19 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #93c47d;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s23 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #000000;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s16 {
+        border-bottom: 1px SOLID #000000;
+        border-right: 1px SOLID #000000;
+        background-color: #b45f06;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: bottom;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+
+    .ritz .waffle .s18 {
+        border-bottom: 1px SOLID #000000;
+        background-color: #93c47d;
+        text-align: center;
+        color: #000000;
+        font-family: 'docs-Russo One', Arial;
+        font-size: 12pt;
+        vertical-align: middle;
+        white-space: nowrap;
+        direction: ltr;
+        padding: 2px 3px 2px 3px;
+    }
+</style>
+<div class="ritz grid-container" dir="ltr">
+    <table class="waffle no-grid" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th class="row-header freezebar-origin-ltr"></th>
+                <th id="1308624482C0" style="width:35px;" class="column-headers-background">A</th>
+                <th id="1308624482C1" style="width:131px;" class="column-headers-background">B</th>
+                <th id="1308624482C2" style="width:34px;" class="column-headers-background">C</th>
+                <th id="1308624482C3" style="width:29px;" class="column-headers-background">D</th>
+                <th id="1308624482C4" style="width:34px;" class="column-headers-background">E</th>
+                <th id="1308624482C5" style="width:34px;" class="column-headers-background">F</th>
+                <th id="1308624482C6" style="width:41px;" class="column-headers-background">G</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 20px">
+                <th id="1308624482R0" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">1</div>
+                </th>
+                <td class="s0" dir="ltr" colspan="7">TITLE PODIUMS - DRIVERS</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R1" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">2</div>
+                </th>
+                <td class="s1" dir="ltr">POS</td>
+                <td class="s2" dir="ltr">DRIVER</td>
+                <td class="s1" dir="ltr">NAT</td>
+                <td class="s1" dir="ltr">1ST</td>
+                <td class="s1" dir="ltr">2ND</td>
+                <td class="s1" dir="ltr">3RD</td>
+                <td class="s1" dir="ltr">POD</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R2" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">3</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">TheOldAmazing</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh3.googleusercontent.com/mv17jtoaqJwrPj83EWgqSf8JkJodqV5tj4mVWndgPqwvk1_2FQTGvbbkF4HtdrGBEdxvq-xK05QrCwN1FTsvkZXXsbutaY8Ho0ZK6-c31fgL3kxl9u8f9XuZH5x4ZW3PsM4XKcEWiw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s8" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R3" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">4</div>
+                </th>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s10" dir="ltr">Nuno</td>
+                <td class="s11" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s12" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R4" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">5</div>
+                </th>
+                <td class="s13" dir="ltr">3</td>
+                <td class="s14" dir="ltr">Sobel</td>
+                <td class="s15" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/3GtOU8aWBOR9F16jqtduUTqsbywtkhGn_Th38_zMSm5Pr6XfVzvGld3JqI9cBodccavgFhUrkJhnmz1QQxs3CLKoMPjXTaU_eK_WOGIb5HrPTOISxGqn1QICLy45957H1sCU4UjDqg=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s16" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R5" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">6</div>
+                </th>
+                <td class="s0" dir="ltr" colspan="7">RACE PODIUM POSITIONS - DRIVERS</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R6" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">7</div>
+                </th>
+                <td class="s1" dir="ltr">POS</td>
+                <td class="s2" dir="ltr">DRIVER</td>
+                <td class="s1" dir="ltr">NAT</td>
+                <td class="s1" dir="ltr">1ST</td>
+                <td class="s1" dir="ltr">2ND</td>
+                <td class="s1" dir="ltr">3RD</td>
+                <td class="s1" dir="ltr">POD</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R7" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">8</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nuno</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8">1</td>
+                <td class="s8">1</td>
+                <td class="s8">1</td>
+                <td class="s8" dir="ltr">3</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R8" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">9</div>
+                </th>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s10" dir="ltr">Sobel</td>
+                <td class="s11" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/3GtOU8aWBOR9F16jqtduUTqsbywtkhGn_Th38_zMSm5Pr6XfVzvGld3JqI9cBodccavgFhUrkJhnmz1QQxs3CLKoMPjXTaU_eK_WOGIb5HrPTOISxGqn1QICLy45957H1sCU4UjDqg=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8">1</td>
+                <td class="s8">1</td>
+                <td class="s17">0</td>
+                <td class="s12" dir="ltr">2</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R9" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">10</div>
+                </th>
+                <td class="s13" dir="ltr">3</td>
+                <td class="s14" dir="ltr">TheAntiAmazing</td>
+                <td class="s15" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh3.googleusercontent.com/mv17jtoaqJwrPj83EWgqSf8JkJodqV5tj4mVWndgPqwvk1_2FQTGvbbkF4HtdrGBEdxvq-xK05QrCwN1FTsvkZXXsbutaY8Ho0ZK6-c31fgL3kxl9u8f9XuZH5x4ZW3PsM4XKcEWiw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8">1</td>
+                <td class="s17">0</td>
+                <td class="s8">1</td>
+                <td class="s12" dir="ltr">2</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R10" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">11</div>
+                </th>
+                <td class="s13" dir="ltr">3</td>
+                <td class="s14" dir="ltr">Zekisverse</td>
+                <td class="s15" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/CMGsyXxc1V4p_1al_mgTb4ogQCE9qZF4_BeJ1z-EVkn0p6Y1mHm3OLFB8EdAV-yiVsiODf9oV-MJxYygq4xPQt5AkMjTd0TjxrNJQHrQEACmU-srLtvEZ_PJqdLCPlsoh0psAw9E1g=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8">1</td>
+                <td class="s17">0</td>
+                <td class="s8">1</td>
+                <td class="s12" dir="ltr">2</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R11" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">12</div>
+                </th>
+                <td class="s18" dir="ltr">5</td>
+                <td class="s19" dir="ltr">Enigma</td>
+                <td class="s20" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh3.googleusercontent.com/2vwOdmq6HcQIyBAESS-xCI61dyHGI3g4Kmc4DCMMTZ-3WGY5kJx5vTADPzxlLgbwcGxhaqcrbiVyFQqgB_2jEqjjIeM7RIKG6SkNHt_Nz63jVmKCkj_ABEeOGHKZrgm-c3rR9RGYeg=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center bottom;" />
+                    </div>
+                </td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s6" dir="ltr">1</td>
+                <td class="s7" dir="ltr">0</td>
+                <td class="s16" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R12" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">13</div>
+                </th>
+                <td class="s18" dir="ltr">5</td>
+                <td class="s19" dir="ltr">Nomscar</td>
+                <td class="s21" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s17">0</td>
+                <td class="s8">1</td>
+                <td class="s17">0</td>
+                <td class="s16" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R13" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">14</div>
+                </th>
+                <td class="s18" dir="ltr">7</td>
+                <td class="s19" dir="ltr">Bruh</td>
+                <td class="s21" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh5.googleusercontent.com/jU9yFxdTDgUYgm4UknowJXbce37d0VOakWwq6nqgglsVAMTtnPIDIpo3cmg1UBzWNu9m0ydDgfXAvBY8uc9XN87HTNKssLGt2Bg_VyCvwbyzdFQc6KH6aSHU8Ocm6_lxeaFHF7u_aw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s17">0</td>
+                <td class="s17">0</td>
+                <td class="s8">1</td>
+                <td class="s16" dir="ltr">1</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R14" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">15</div>
+                </th>
+                <td class="s0" dir="ltr" colspan="7">TOTAL RACE PODIUMS - DRIVERS</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R15" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">16</div>
+                </th>
+                <td class="s1" dir="ltr">POS</td>
+                <td class="s2" dir="ltr">DRIVER</td>
+                <td class="s1" dir="ltr">NAT</td>
+                <td class="s1" dir="ltr">P</td>
+                <td class="s22" dir="ltr"></td>
+                <td class="s22" dir="ltr"></td>
+                <td class="s22" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R16" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">17</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nuno</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">3</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R17" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">18</div>
+                </th>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s10" dir="ltr">TheAntiAmazing</td>
+                <td class="s11" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh3.googleusercontent.com/mv17jtoaqJwrPj83EWgqSf8JkJodqV5tj4mVWndgPqwvk1_2FQTGvbbkF4HtdrGBEdxvq-xK05QrCwN1FTsvkZXXsbutaY8Ho0ZK6-c31fgL3kxl9u8f9XuZH5x4ZW3PsM4XKcEWiw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s12" dir="ltr">2</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R18" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">19</div>
+                </th>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s10" dir="ltr">Sobel</td>
+                <td class="s11" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/3GtOU8aWBOR9F16jqtduUTqsbywtkhGn_Th38_zMSm5Pr6XfVzvGld3JqI9cBodccavgFhUrkJhnmz1QQxs3CLKoMPjXTaU_eK_WOGIb5HrPTOISxGqn1QICLy45957H1sCU4UjDqg=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s12" dir="ltr">2</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R19" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">20</div>
+                </th>
+                <td class="s9" dir="ltr">2</td>
+                <td class="s10" dir="ltr">Zekisverse</td>
+                <td class="s11" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/CMGsyXxc1V4p_1al_mgTb4ogQCE9qZF4_BeJ1z-EVkn0p6Y1mHm3OLFB8EdAV-yiVsiODf9oV-MJxYygq4xPQt5AkMjTd0TjxrNJQHrQEACmU-srLtvEZ_PJqdLCPlsoh0psAw9E1g=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s12" dir="ltr">2</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R20" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">21</div>
+                </th>
+                <td class="s18" dir="ltr">5</td>
+                <td class="s19" dir="ltr">Enigma</td>
+                <td class="s21" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh5.googleusercontent.com/jU9yFxdTDgUYgm4UknowJXbce37d0VOakWwq6nqgglsVAMTtnPIDIpo3cmg1UBzWNu9m0ydDgfXAvBY8uc9XN87HTNKssLGt2Bg_VyCvwbyzdFQc6KH6aSHU8Ocm6_lxeaFHF7u_aw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s24" dir="ltr">1</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R21" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">22</div>
+                </th>
+                <td class="s18" dir="ltr">5</td>
+                <td class="s19" dir="ltr">Nomscar</td>
+                <td class="s21" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s24" dir="ltr">1</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R22" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">23</div>
+                </th>
+                <td class="s18" dir="ltr">5</td>
+                <td class="s19" dir="ltr">Bruh</td>
+                <td class="s21" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh5.googleusercontent.com/jU9yFxdTDgUYgm4UknowJXbce37d0VOakWwq6nqgglsVAMTtnPIDIpo3cmg1UBzWNu9m0ydDgfXAvBY8uc9XN87HTNKssLGt2Bg_VyCvwbyzdFQc6KH6aSHU8Ocm6_lxeaFHF7u_aw=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s24" dir="ltr">1</td>
+                <td class="s23"></td>
+                <td class="s23"></td>
+                <td class="s23" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R23" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">24</div>
+                </th>
+                <td class="s0" dir="ltr" colspan="7">POLE POSITIONS - DRIVERS</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R24" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">25</div>
+                </th>
+                <td class="s1" dir="ltr">POS</td>
+                <td class="s2" dir="ltr">DRIVER</td>
+                <td class="s1" dir="ltr">NAT</td>
+                <td class="s1" dir="ltr">PP</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R25" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">26</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nuno</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">2</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R26" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">27</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nomscar</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">2</td>
+                <td class="s26"></td>
+                <td class="s26"></td>
+                <td class="s26" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R27" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">28</div>
+                </th>
+                <td class="s0" dir="ltr" colspan="7">FASTEST LAPS - DRIVERS</td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R28" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">29</div>
+                </th>
+                <td class="s1" dir="ltr">POS</td>
+                <td class="s2" dir="ltr">DRIVER</td>
+                <td class="s1" dir="ltr">NAT</td>
+                <td class="s1" dir="ltr">FL</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R29" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">30</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Urist</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R30" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">31</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Zekisverse</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/CMGsyXxc1V4p_1al_mgTb4ogQCE9qZF4_BeJ1z-EVkn0p6Y1mHm3OLFB8EdAV-yiVsiODf9oV-MJxYygq4xPQt5AkMjTd0TjxrNJQHrQEACmU-srLtvEZ_PJqdLCPlsoh0psAw9E1g=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R31" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">32</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nuno</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R32" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">33</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Nomscar</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/l8PTwh0GaFw31CfqaKhFbO5ZpGb0xN1Oq7NP37j9dVxgQfGFcZbURCnsJhk0WWF1Ai8eEw9gMjDATuu3FcLhDG3mavkCZRsryuMwNnOqD2DT8N9Df0T1MdDnk5vvf9CG1LEiD3N8Og=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+            <tr style="height: 20px">
+                <th id="1308624482R33" style="height: 20px;" class="row-headers-background">
+                    <div class="row-header-wrapper" style="line-height: 20px">34</div>
+                </th>
+                <td class="s3" dir="ltr">1</td>
+                <td class="s4" dir="ltr">Sobel</td>
+                <td class="s5" dir="ltr">
+                    <div style="width:34px;height:20px;"><img
+                            src="https://lh6.googleusercontent.com/3GtOU8aWBOR9F16jqtduUTqsbywtkhGn_Th38_zMSm5Pr6XfVzvGld3JqI9cBodccavgFhUrkJhnmz1QQxs3CLKoMPjXTaU_eK_WOGIb5HrPTOISxGqn1QICLy45957H1sCU4UjDqg=w34-h20"
+                            style="width:inherit;height:inherit;object-fit:scale-down;object-position:center center;" />
+                    </div>
+                </td>
+                <td class="s8" dir="ltr">1</td>
+                <td class="s25"></td>
+                <td class="s25"></td>
+                <td class="s25" dir="ltr"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
